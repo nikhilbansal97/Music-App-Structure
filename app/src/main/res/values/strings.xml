@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Music app</string>
+    <string name="song_name">Take It Back</string>
+    <string name="album_name">Figgy</string>
+    <string name="start_time">0:00</string>
+    <string name="end_time">3:23</string>
+    <string name="library">LIBRARY</string>
+    <string name="settings_activity">SETTINGS</string>
+    <string name="setting_1">Setting 1</string>
+    <string name="setting_2">Setting 2</string>
+    <string name="setting_3">Setting 3</string>
+    <string name="setting_4">Setting 4</string>
+    <string name="setting_5">Setting 5</string>
+    <string name="info">Info</string>
+
+    <string name="equalizer_info">An application creates an Equalizer object to instantiate and control an Equalizer engine in the audio framework. The application can either simply use predefined presets or have a more precise control of the gain in each frequency band controlled by the equalizer.</string>
+    <string name="player_info">Media Player class is the primary API for playing sound and video</string>
+    <string name="library_info">Audio Manager class manages audio sources and audio output on a device</string>
+    <string name="playlist_info">Playlist:list returns a collection of playlists that match the API request parameters.</string>
+</resources>

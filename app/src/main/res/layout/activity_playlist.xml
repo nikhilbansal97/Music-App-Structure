@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_playlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicapp.Playlist">
+
+
+    <ImageView
+        android:id="@+id/playlist_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/my_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:padding="10dp"
+        android:text="My Playlist"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/playlist_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_playlist"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/playlist_art"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="20dp">
+
+            <ImageView
+                android:id="@+id/playlist_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/library_seek"
+            android:layout_width="120dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/playlist_art"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/library_seek_black"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/playlist_art"
+            android:layout_marginTop="5dp"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/library_seek"
+            android:text="1:34"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/library_seek"
+            android:layout_marginStart="100dp"
+            android:text="3:23"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/playlist_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/playlist_art"
+            android:layout_marginStart="20dp"
+            android:text="@string/playlist_info"/>
+
+        <ImageView
+            android:id="@+id/playlist_library"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@id/playlist_art"
+            android:adjustViewBounds="true"
+            android:src="@drawable/playlist1" />
+
+        <TextView
+            android:id="@+id/tracks_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@id/playlist_library"
+            android:text="10 Tracks"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tracks_count"
+            android:layout_toEndOf="@id/playlist_art">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#98880E4F"
+                android:text="SAVE"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#98880E4F"
+                android:text="ADD SONG"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/playlist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playlist_controls"
+        android:layout_marginTop="10dp">
+
+
+    </ListView>
+
+</RelativeLayout>
